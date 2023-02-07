@@ -1,0 +1,391 @@
+{
+   "1683143882": {
+      "from": "yippymishy",
+      "to": "yippymishy",
+      "amount": 3.0
+   },
+   "1683144036": {
+      "id": 1683144036,
+      "from": "yippymishy",
+      "to": "yippymishy",
+      "amount": 5.0
+   },
+   "1683144067": {
+      "id": 1683144067,
+      "from": "student458807",
+      "to": "jude10000",
+      "amount": 5.0
+   },
+   "1683144157": {
+      "id": 1683144157,
+      "from": "yippymishy",
+      "to": "yippymishy",
+      "amount": 3.0
+   },
+   "1683144359": {
+      "id": 1683144359,
+      "from": "yippymishy",
+      "to": "yippymishy",
+      "amount": 5.0
+   },
+   "1683144388": {
+      "id": 1683144388,
+      "from": "yippymishy",
+      "to": "yippymishy",
+      "amount": 4.0
+   },
+   "1683144395": {
+      "id": 1683144395,
+      "from": "yippymishy",
+      "to": "yippymishy",
+      "amount": 5.0
+   },
+   "1683144411": {
+      "id": 1683144411,
+      "from": "yippymishy",
+      "to": "yippymishy",
+      "amount": 5.0
+   },
+   "1683144627": {
+      "id": 1683144627,
+      "from": "yippymishy",
+      "to": "yippymishy",
+      "amount": 4.0
+   },
+   "1683144661": {
+      "id": 1683144661,
+      "from": "Dragonwolf11936",
+      "to": "antoniolucifero13",
+      "amount": 7.0
+   },
+   "1683144664": {
+      "id": 1683144664,
+      "from": "-fantanius-",
+      "to": "-fantanius-",
+      "amount": 100.0
+   },
+   "1683144677": {
+      "id": 1683144677,
+      "from": "yippymishy",
+      "to": "yippymishy",
+      "amount": 4.0
+   },
+   "1683144707": {
+      "id": 1683144707,
+      "from": "yippymishy",
+      "to": "yippymishy",
+      "amount": 4.0
+   },
+   "1683144714": {
+      "id": 1683144714,
+      "from": "yippymishy",
+      "to": "yippymishy",
+      "amount": 3.0
+   },
+   "1683144731": {
+      "id": 1683144731,
+      "from": "yippymishy",
+      "to": "yippymishy",
+      "amount": 4.0
+   },
+   "1683144751": {
+      "id": 1683144751,
+      "from": "yippymishy",
+      "to": "yippymishy",
+      "amount": 5.0
+   },
+   "1683144967": {
+      "id": 1683144967,
+      "from": "HyvexJacket",
+      "to": "-pyronfx-",
+      "amount": 5.0
+   },
+   "1683145316": {
+      "id": 1683145316,
+      "from": "FROST112009",
+      "to": "yann38",
+      "amount": 19.0
+   },
+   "1683145617": {
+      "id": 1683145617,
+      "from": "IDKDUDE024",
+      "to": "hardcomet177081",
+      "amount": 15.0
+   },
+   "1683145689": {
+      "id": 1683145689,
+      "from": "-PyronFX-",
+      "to": "bastabricebirthday",
+      "amount": 20.0
+   },
+   "1683145741": {
+      "id": 1683145741,
+      "from": "-PyronFX-",
+      "to": "emoji_dreff",
+      "amount": 20.0
+   },
+   "1683146074": {
+      "id": 1683146074,
+      "from": "CodingPanda0523",
+      "to": "ringerygaming",
+      "amount": 5.0
+   },
+   "1683146340": {
+      "id": 1683146340,
+      "from": "ScratchDaPony",
+      "to": "scratchdapony",
+      "amount": 100.0
+   },
+   "1683146556": {
+      "id": 1683146556,
+      "from": "-PyronFX-",
+      "to": "azzy321_",
+      "amount": 20.0
+   },
+   "1683146592": {
+      "id": 1683146592,
+      "from": "CodingPanda0523",
+      "to": "ringerygaming",
+      "amount": 2.5
+   },
+   "1683146692": {
+      "id": 1683146692,
+      "from": "xDes-",
+      "to": "xdes-",
+      "amount": 1.0
+   },
+   "1683146952": {
+      "id": 1683146952,
+      "from": "-Xtreme-Coders-",
+      "to": "dereks80808",
+      "amount": 100.0
+   },
+   "1683146957": {
+      "id": 1683146957,
+      "from": "bunjeejumper2",
+      "to": "only_dg",
+      "amount": 1.0
+   },
+   "1683147044": {
+      "id": 1683147044,
+      "from": "SlikBoy300",
+      "to": "promatt65",
+      "amount": 100.0
+   },
+   "1683147289": {
+      "id": 1683147289,
+      "from": "stahr2",
+      "to": "stahr2",
+      "amount": 10.0
+   },
+   "1683147490": {
+      "timestamp": "14:34:17",
+      "id": 1683147490,
+      "from": "yippymishy",
+      "to": "yippymishy",
+      "amount": 3.0
+   },
+   "1683148041": {
+      "timestamp": "14:43:28",
+      "id": 1683148041,
+      "from": "FIRE_AND_AXE",
+      "to": "loagmano",
+      "amount": 100.0
+   },
+   "1683148089": {
+      "timestamp": "14:44:16",
+      "id": 1683148089,
+      "from": "YC_dresden",
+      "to": "pineapplecow99",
+      "amount": 100.0
+   },
+   "1683148092": {
+      "timestamp": "14:44:19",
+      "id": 1683148092,
+      "from": "Lightjrjr",
+      "to": "bastabricebirthday",
+      "amount": 100.0
+   },
+   "1683148117": {
+      "timestamp": "14:44:44",
+      "id": 1683148117,
+      "from": "ScratchyNinja_",
+      "to": "ringerygaming",
+      "amount": 2.5
+   },
+   "1683148119": {
+      "timestamp": "14:44:46",
+      "id": 1683148119,
+      "from": "toyota12345678910",
+      "to": "scratchyninja_",
+      "amount": 50.0
+   },
+   "1683148207": {
+      "timestamp": "14:46:14",
+      "id": 1683148207,
+      "from": "Azzy321_",
+      "to": "busybird15",
+      "amount": 3.0
+   },
+   "1683148756": {
+      "timestamp": "14:55:23",
+      "id": 1683148756,
+      "from": "CodingPanda0523",
+      "to": "ringerygaming",
+      "amount": 2.5
+   },
+   "1683148802": {
+      "timestamp": "14:56:09",
+      "id": 1683148802,
+      "from": "parker5L",
+      "to": "scientificallycool6",
+      "amount": 10.0
+   },
+   "1683148886": {
+      "timestamp": "14:57:33",
+      "id": 1683148886,
+      "from": "Meepalina",
+      "to": "busybird15",
+      "amount": 20.0
+   },
+   "1683149645": {
+      "timestamp": "15:10:12",
+      "id": 1683149645,
+      "from": "BusyBird15",
+      "to": "azzy321_",
+      "amount": 27.0
+   },
+   "1683150324": {
+      "timestamp": "15:21:31",
+      "id": 1683150324,
+      "from": "ARandomReporter",
+      "to": "lukanfoxreturnes",
+      "amount": 50.0
+   },
+   "1683151052": {
+      "timestamp": "15:33:39",
+      "id": 1683151052,
+      "from": "HardComet177081",
+      "to": "-gamergio-",
+      "amount": 7.0
+   },
+   "1683151091": {
+      "timestamp": "15:34:18",
+      "id": 1683151091,
+      "from": "HardComet177081",
+      "to": "mokeyanimations2",
+      "amount": 12.0
+   },
+   "1683151115": {
+      "timestamp": "15:34:42",
+      "id": 1683151115,
+      "from": "blockgamer904",
+      "to": "noah5665",
+      "amount": 1.0
+   },
+   "1683151306": {
+      "timestamp": "15:37:53",
+      "id": 1683151306,
+      "from": "Peirl1",
+      "to": "yippymishy",
+      "amount": 1.0
+   },
+   "1683151361": {
+      "timestamp": "15:38:48",
+      "id": 1683151361,
+      "from": "YanGoose",
+      "to": "yangoose_test",
+      "amount": 10.0
+   },
+   "1683151401": {
+      "timestamp": "15:39:28",
+      "id": 1683151401,
+      "from": "-Scorox-",
+      "to": "-scorox-",
+      "amount": 1e-73
+   },
+   "1683151471": {
+      "timestamp": "15:40:38",
+      "id": 1683151471,
+      "from": "-Scorox-",
+      "to": "-scorox-",
+      "amount": 0.5
+   },
+   "1683151493": {
+      "timestamp": "15:41:00",
+      "id": 1683151493,
+      "from": "YanGoose_test",
+      "to": "yangoose",
+      "amount": 110.0
+   },
+   "1683151501": {
+      "timestamp": "15:41:08",
+      "id": 1683151501,
+      "from": "boyuboy",
+      "to": "supercell_studios",
+      "amount": 1e-16
+   },
+   "1683151573": {
+      "timestamp": "15:42:20",
+      "id": 1683151573,
+      "from": "SuperCell_Studios",
+      "to": "boyuboy",
+      "amount": 1e-16
+   },
+   "1683152182": {
+      "timestamp": "15:52:29",
+      "id": 1683152182,
+      "from": "Lazar_animation",
+      "to": "we09532",
+      "amount": 5.0
+   },
+   "1683152427": {
+      "timestamp": "15:56:34",
+      "id": 1683152427,
+      "from": "bunjeejumper2",
+      "to": "soggysocks_withonion",
+      "amount": 25.99
+   },
+   "1683152440": {
+      "timestamp": "15:56:47",
+      "id": 1683152440,
+      "from": "Lazar_animation",
+      "to": "idkdude024",
+      "amount": 2.0
+   },
+   "1683154251": {
+      "timestamp": "16:26:58",
+      "id": 1683154251,
+      "from": "NitroBirdy123",
+      "to": "gdnewbie",
+      "amount": 12.0
+   },
+   "1683154362": {
+      "timestamp": "16:28:49",
+      "id": 1683154362,
+      "from": "loagmano",
+      "to": "linklingsplatoon",
+      "amount": 20.0
+   },
+   "1683154622": {
+      "timestamp": "16:33:09",
+      "id": 1683154622,
+      "from": "Elijah999999",
+      "to": "elijah999999",
+      "amount": 95.0
+   },
+   "1683155162": {
+      "timestamp": "16:42:09",
+      "id": 1683155162,
+      "from": "Oplect",
+      "to": "-xotic",
+      "amount": 100.0
+   },
+   "1683155408": {
+      "timestamp": "16:46:15",
+      "id": 1683155408,
+      "from": "soggysocks_WITHONION",
+      "to": "busybird15",
+      "amount": 8.0
+   }
+}
