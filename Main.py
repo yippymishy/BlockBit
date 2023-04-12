@@ -5,7 +5,7 @@ from local_simple_database import LocalDictDatabase
 import time
 import os
 import threading
-
+import math
 
 def api():
     os.system("python API.py")
@@ -22,6 +22,21 @@ LDD = LocalDictDatabase(
 
 db = LDD["dict_balances"]
 transactions = LDD['dict_transactions']
+
+
+def actions():
+    total = 0
+    for i in db.get_value():
+        # total += db[i]
+        '''if db[i] > 1000:
+            print('a lot: ' + i + ' // ' + str(db[i]))'''
+        db[i] = float(math.ceil(db[i]))
+    print(total)
+
+
+'''t2 = threading.Thread(target=actions(), args=())
+t2.start()'''
+
 
 # Connect to Scratch
 session = scratch3.Session(os.environ["SESSION"], username="yippymishy")
@@ -41,6 +56,22 @@ def createID(inp):
     currentTime = int(time.time())
     return (myint + currentTime)
 
+
+def leaderboard(amount, offset):
+    info = db.get_value()
+    info = {key: val for key, val in sorted(info.items(), key = lambda ele: ele[1], reverse=True)}
+    res = dict(list(info.items())[offset: offset+amount])
+    return res
+
+
+def sendTop():
+    top = leaderboard(5, 0)
+    top = [f"{i}#{round(top[i])}" for i in top]
+    top = str(top)
+    top = top.replace("['", "").replace("', '", "&").replace("']", "")
+    print(top)
+    print(len(Encoding.encode(top)))
+    return top
 
 # The cloud var's name (has zero width space at the end)
 varName = "cloud​"
@@ -74,6 +105,9 @@ def on_set(event):
             conn.set_var(varName, Encoding.encode(f'{event.user}${str(bal)}'))
             log = f"Returned @{event.user}'s balance of {str(bal)}"
         # If it's something else (an admin request or a gift request)
+        elif cloud == 'board':
+            conn.set_var(varName, Encoding.encode(sendTop()))
+
         else:
             # Parse it because all requests except "bal" have args
             c = cloud.split('&')
@@ -101,9 +135,10 @@ def on_set(event):
                         except KeyError:
                             db[rec] = 100.0
                             db[rec] = db[rec] + float(c[2])
-                        giftID = createID(event.user)
-                        giftInfo = {"timestamp": timestamp, "id": giftID, "from": event.user, "to": rec, "amount": float(c[2])}
-                        conn.set_var(varName, Encoding.encode(
+                    giftID = createID(event.user)
+                    giftInfo = {"timestamp": int(time.time()), "id": giftID, "from": event.user, "to": rec, "amount": float(c[2])}
+
+                    conn.set_var(varName, Encoding.encode(
                             f'notif${rec}${float(c[2])}${fixName(event.user)}${giftID}'))
                     log = f"{event.user} gave {str(float(c[2]))} bits to {rec}"
                     transactions[giftID] = giftInfo
@@ -144,4 +179,3 @@ def on_ready():
 
 # Start events
 events.start()
-
