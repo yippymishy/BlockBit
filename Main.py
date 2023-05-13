@@ -7,6 +7,12 @@ import os
 import threading
 import math
 
+# Constants
+varName = "Cloud"
+projectID = 669020072
+
+
+# Start the API, which is in API.py
 def api():
     os.system("python API.py")
 
@@ -14,7 +20,7 @@ def api():
 t = threading.Thread(target=api, args=())
 t.start()
 
-# Initialize DBs
+# Initialize DBs, which use the Local Simple Database library
 LDD = LocalDictDatabase(
     str_path_database_dir=".",
     default_value=None,
@@ -24,6 +30,7 @@ db = LDD["dict_balances"]
 transactions = LDD['dict_transactions']
 
 
+# Various actions such as finding large balances, and rounding balances.
 def actions():
     total = 0
     for i in db.get_value():
@@ -40,8 +47,8 @@ t2.start()'''
 
 # Connect to Scratch
 session = scratch3.Session(os.environ["SESSION"], username="yippymishy")
-conn = session.connect_cloud(project_id="669020072")
-events = scratch3.CloudEvents("669020072")
+conn = session.connect_cloud(project_id=projectID)
+events = scratch3.CloudEvents(projectID)
 
 
 # Definitions
@@ -49,7 +56,7 @@ events = scratch3.CloudEvents("669020072")
 def fixName(inp):
     return inp.replace(" ", "").replace("@", "").lower()
 
-
+# Create a transaction ID
 def createID(inp):
     mybytes = 'yippymishy'[0:3].encode('utf-8')
     myint = int.from_bytes(mybytes, 'little')
@@ -57,24 +64,23 @@ def createID(inp):
     return (myint + currentTime)
 
 
+# Get the users with the most balances
 def leaderboard(amount, offset):
     info = db.get_value()
-    info = {key: val for key, val in sorted(info.items(), key = lambda ele: ele[1], reverse=True)}
+    info = {key: val for key, val in sorted(info.items(), key=lambda ele: ele[1], reverse=True)}
     res = dict(list(info.items())[offset: offset+amount])
     return res
 
 
+# Put the top 5 leaderboard into a single string,
+# So it can be sent in a cloud variable
 def sendTop():
     top = leaderboard(5, 0)
     top = [f"{i}#{round(top[i])}" for i in top]
     top = str(top)
     top = top.replace("['", "").replace("', '", "&").replace("']", "")
-    print(top)
-    print(len(Encoding.encode(top)))
     return top
 
-# The cloud var's name (has zero width space at the end)
-varName = "cloud​"
 
 # On_set event
 
@@ -128,18 +134,20 @@ def on_set(event):
                         # Subtract the gift amount from the user's balance
                         db[event.user.lower(
                         )] = db[event.user.lower()] - float(c[2])
-                        # Give the giftee the gift amount, creating a new
-                        # account for them if necessary
-                        try:
-                            db[rec] = db[rec] + float(c[2])
-                        except KeyError:
-                            db[rec] = 100.0
-                            db[rec] = db[rec] + float(c[2])
+                        # Give the giftee the gift amount, creating a
+                        # new account for them if necessary.
+                        # prevent too long names
+                        if len(rec) <= 20:
+                            try:
+                                db[rec] = db[rec] + float(c[2])
+                            except KeyError:
+                                db[rec] = 100.0
+                                db[rec] = db[rec] + float(c[2])
                     giftID = createID(event.user)
                     giftInfo = {"timestamp": int(time.time()), "id": giftID, "from": event.user, "to": rec, "amount": float(c[2])}
 
                     conn.set_var(varName, Encoding.encode(
-                            f'notif${rec}${float(c[2])}${fixName(event.user)}${giftID}'))
+                            f'notif​${rec}${float(c[2])}${fixName(event.user)}${giftID}'))
                     log = f"{event.user} gave {str(float(c[2]))} bits to {rec}"
                     transactions[giftID] = giftInfo
                 except ValueError or IndexError:
@@ -149,7 +157,7 @@ def on_set(event):
                         db[event.user.lower()] = 100.0
                         bal = db[event.user.lower()]
                     conn.set_var(varName, Encoding.encode(
-                        f'notif${rec}${float(c[2])}${fixName(event.user)}${giftID}'))
+                        f'notif​${rec}${float(c[2])}${fixName(event.user)}${giftID}'))
                     transactions[giftID] = giftInfo
                     log = f"Gift request invalid - returned @{event.user}'s balance of {str(bal)}"
             if c[0] == 'see':
