@@ -10,6 +10,7 @@ numpy = "^1.22.2"
 replit = "^3.2.4"
 local-simple-database = "^0.1.10"
 autopep8 = "^2.0.1"
+psutil = "^5.9.5"
 
 [tool.poetry.dev-dependencies]
 
