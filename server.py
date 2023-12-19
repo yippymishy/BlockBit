@@ -9,6 +9,8 @@ import math
 # Constants
 varName = "Cloud-1"
 projectID = 669020072
+USERNAME = "Your_Username"
+PASSWORD = "Your_Password"
 
 # Initialize DBs, which use the Local Simple Database library
 LDD = LocalDictDatabase(
@@ -36,7 +38,7 @@ t2.start()'''
 
 
 # Connect to Scratch
-session = scratch3.login('yippymishy', "password")
+session = scratch3.login(USERNAME, PASSWORD)
 conn = session.connect_cloud(projectID)
 events = scratch3.WsCloudEvents(projectID, conn)
 
