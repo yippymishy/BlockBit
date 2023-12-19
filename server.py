@@ -36,7 +36,7 @@ t2.start()'''
 
 
 # Connect to Scratch
-session = scratch3.login('yippymishy', "BlockBit42!")
+session = scratch3.login('yippymishy', "password")
 conn = session.connect_cloud(projectID)
 events = scratch3.WsCloudEvents(projectID, conn)
 
