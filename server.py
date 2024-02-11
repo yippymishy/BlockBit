@@ -7,7 +7,7 @@ import os
 import math
 
 # Constants
-varName = "Cloud-1"
+varName = "Cloud 1"
 projectID = 669020072
 USERNAME = "Your_Username"
 PASSWORD = "Your_Password"
