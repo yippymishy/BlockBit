@@ -3,6 +3,9 @@ import os
 import subprocess
 import time
 
+os.system('pip install scratchattach')
+os.system('pip install local-simple-database')
+
 print('===== BlockBit Server =====')
 
 def kill_process_by_name(name):
