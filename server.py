@@ -9,8 +9,12 @@ import math
 # Constants
 varName = "Cloud 1"
 projectID = 669020072
-USERNAME = "Your_Username"
-PASSWORD = "Your_Password"
+
+'''USERNAME = "Your_Username"
+PASSWORD = "Your_Password"'''
+
+USERNAME = os.environ['username']
+PASSWORD = os.environ['password']
 
 # Initialize DBs, which use the Local Simple Database library
 LDD = LocalDictDatabase(
