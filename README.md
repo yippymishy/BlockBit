@@ -1,6 +1,5 @@
 # BlockBit
-This repository contains all the server code for BlockBit, a currency on Scratch (created by me) which you can check out here:
-https://scratch.mit.edu/projects/669020072/
+All the server and API code for [BlockBit](https://scratch.mit.edu/projects/669020072/), a currency on Scratch (created by me)!
 
 # Files
 **main.py** - Creates a thread for the API and a thread for the server.\
