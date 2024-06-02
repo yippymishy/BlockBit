@@ -15,4 +15,4 @@ https://scratch.mit.edu/projects/669020072/
 **session_id.txt** - Put your Scratch session ID here
 
 # API Docs
-**/balance/\<user>** - returns the specified user's balance [[Example](blockbit.yippymishy.com/balance/yippymishy)]
+**/balance/\<user>** - returns the specified user's balance [[Example](https://blockbit.yippymishy.com/balance/yippymishy)]
