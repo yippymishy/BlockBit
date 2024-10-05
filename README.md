@@ -15,3 +15,5 @@ All the server and API code for [BlockBit](https://scratch.mit.edu/projects/6690
 
 # API Docs
 **/balance/\<user>** - returns the specified user's balance [[Example](https://blockbit.yippymishy.com/balance/yippymishy)]
+
+**/query/\<user>** - returns transactions where user received or sent bits [[Example](https://blockbit.yippymishy.com/query/yippymishy)]
