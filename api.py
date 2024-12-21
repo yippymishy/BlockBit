@@ -16,6 +16,14 @@ app = Flask(__name__)
 def home():
     return render_template('index.html')
 
+@app.route('/query/<username>')
+def query_user(username):
+    result = {}
+    for k,v in transactions_db.items():
+        if v["from"] == username or v["to"] == username:
+            result.update({k:v})
+    return result
+
 @app.route('/balance/<username>')
 def balance(username):
     try:
