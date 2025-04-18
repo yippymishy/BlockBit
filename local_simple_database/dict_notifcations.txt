@@ -1,0 +1,317 @@
+{
+   "yippymishy": [
+      "22:50 on 04/17/25 - brbgames gave you 50.0 bits!",
+      "02:45 on 04/18/25 - snoopythe3 gave you 10.0 bits!",
+      "15:10 on 04/18/25 - You gave 160.0 bits to yippymishytest!",
+      "15:20 on 04/18/25 - You gave 100.0 bits to yippymishytest!",
+      "15:22 on 04/18/25 - You gave 100.0 bits to yippymishytest!",
+      "15:24 on 04/18/25 - You gave 100.0 bits to yippymishytest!",
+      "15:26 on 04/18/25 - You gave 100.0 bits to yippymishytest!",
+      "15:47 on 04/18/25 - briiiiantscratcher gave you 50.0 bits!",
+      "15:55 on 04/18/25 - 3dxbrayden2 gave you 50.0 bits!"
+   ],
+   "gaelover": [],
+   "cjskitss": [
+      "22:31 on 04/17/25 - cjtesst gave you 100.0 bits!",
+      "22:31 on 04/17/25 - mctonk gave you 100.0 bits!",
+      "22:32 on 04/17/25 - bageibytes gave you 100.0 bits!",
+      "22:33 on 04/17/25 - ethiopla gave you 100.0 bits!",
+      "22:37 on 04/17/25 - wailpaper gave you 100.0 bits!"
+   ],
+   "jokeyguy": [],
+   "mfort210": [],
+   "eeoo2beeboo": [],
+   "voidx72": [
+      "22:19 on 04/17/25 - finnishprojects gave you 100.0 bits!",
+      "22:26 on 04/17/25 - danewndwciacaso391 gave you 100.0 bits!",
+      "22:34 on 04/17/25 - lanair6 gave you 30.0 bits!"
+   ],
+   "phinblue": [],
+   "finnishprojects": [
+      "22:19 on 04/17/25 - You gave 100.0 bits to voidx72!"
+   ],
+   "danewndwciacaso391": [
+      "22:26 on 04/17/25 - You gave 100.0 bits to voidx72!"
+   ],
+   "cjtesst": [
+      "22:31 on 04/17/25 - You gave 100.0 bits to cjskitss!"
+   ],
+   "mctonk": [
+      "22:31 on 04/17/25 - You gave 100.0 bits to cjskitss!"
+   ],
+   "bageibytes": [
+      "22:32 on 04/17/25 - You gave 100.0 bits to cjskitss!"
+   ],
+   "ethiopla": [
+      "22:33 on 04/17/25 - You gave 100.0 bits to cjskitss!"
+   ],
+   "lanair6": [
+      "22:34 on 04/17/25 - You gave 30.0 bits to voidx72!"
+   ],
+   "attyboii": [],
+   "wailpaper": [
+      "22:37 on 04/17/25 - You gave 100.0 bits to cjskitss!"
+   ],
+   "brbgames": [
+      "22:50 on 04/17/25 - You gave 50.0 bits to yippymishy!"
+   ],
+   "robo_dough": [],
+   "rip_noob_god": [],
+   "man-o-valor": [
+      "23:10 on 04/17/25 - soulstealer4057 gave you 100.0 bits!"
+   ],
+   "soulstealer4057": [
+      "23:10 on 04/17/25 - You gave 100.0 bits to man-o-valor!"
+   ],
+   "voxalice": [],
+   "greenicecreamyes": [],
+   "theplayer9": [
+      "00:13 on 04/18/25 - theplayer9tests gave you 100.0 bits!",
+      "00:15 on 04/18/25 - theplayer9_two gave you 100.0 bits!"
+   ],
+   "wvzack": [],
+   "theplayer9tests": [
+      "00:13 on 04/18/25 - You gave 100.0 bits to theplayer9!"
+   ],
+   "theplayer9_two": [
+      "00:15 on 04/18/25 - You gave 100.0 bits to theplayer9!"
+   ],
+   "clawbone": [],
+   "nexoalexsalt": [],
+   "devils_machine-alt": [
+      "04:49 on 04/18/25 - rizbar_partnerships gave you 3.0 bits!"
+   ],
+   "snoopythe3": [
+      "02:45 on 04/18/25 - You gave 10.0 bits to yippymishy!"
+   ],
+   "more--gameplay": [
+      "08:53 on 04/18/25 - You gave 100.0 bits to --gameplay!"
+   ],
+   "legobeano147_pro": [
+      "04:01 on 04/18/25 - legobeano777 gave you 100.0 bits!",
+      "04:02 on 04/18/25 - -designition- gave you 100.0 bits!",
+      "07:32 on 04/18/25 - -designition- gave you 100.0 bits!",
+      "07:33 on 04/18/25 - -designition- gave you 100.0 bits!",
+      "07:33 on 04/18/25 - -designition- gave you 100.0 bits!",
+      "07:33 on 04/18/25 - -designition- gave you 100.0 bits!",
+      "07:34 on 04/18/25 - -designition- gave you 100.0 bits!",
+      "07:34 on 04/18/25 - -designition- gave you 100.0 bits!",
+      "07:35 on 04/18/25 - -designition- gave you 100.0 bits!",
+      "07:35 on 04/18/25 - -designition- gave you 100.0 bits!",
+      "07:35 on 04/18/25 - -designition- gave you 100.0 bits!",
+      "07:35 on 04/18/25 - -designition- gave you 100.0 bits!",
+      "07:36 on 04/18/25 - -designition- gave you 100.0 bits!",
+      "07:36 on 04/18/25 - -designition- gave you 70.0 bits!"
+   ],
+   "legobeano777": [
+      "04:01 on 04/18/25 - You gave 100.0 bits to legobeano147_pro!",
+      "15:45 on 04/18/25 - You gave 100.0 bits to -designition-!"
+   ],
+   "-designition-": [
+      "04:02 on 04/18/25 - You gave 100.0 bits to legobeano147_pro!",
+      "07:32 on 04/18/25 - You gave 100.0 bits to legobeano147_pro!",
+      "07:33 on 04/18/25 - You gave 100.0 bits to legobeano147_pro!",
+      "07:33 on 04/18/25 - You gave 100.0 bits to legobeano147_pro!",
+      "07:33 on 04/18/25 - You gave 100.0 bits to legobeano147_pro!",
+      "07:34 on 04/18/25 - You gave 100.0 bits to legobeano147_pro!",
+      "07:34 on 04/18/25 - You gave 100.0 bits to legobeano147_pro!",
+      "07:35 on 04/18/25 - You gave 100.0 bits to legobeano147_pro!",
+      "07:35 on 04/18/25 - You gave 100.0 bits to legobeano147_pro!",
+      "07:35 on 04/18/25 - You gave 100.0 bits to legobeano147_pro!",
+      "07:35 on 04/18/25 - You gave 100.0 bits to legobeano147_pro!",
+      "07:36 on 04/18/25 - You gave 100.0 bits to legobeano147_pro!",
+      "07:36 on 04/18/25 - You gave 70.0 bits to legobeano147_pro!",
+      "15:45 on 04/18/25 - legobeano777 gave you 100.0 bits!"
+   ],
+   "t_i_m_t_i_m": [],
+   "rizbar_partnerships": [
+      "04:49 on 04/18/25 - You gave 3.0 bits to devils_machine-alt!"
+   ],
+   "redbreadx": [
+      "06:17 on 04/18/25 - ap-awesomeyoyo gave you 100.0 bits!",
+      "06:18 on 04/18/25 - crazycoderxyz gave you 100.0 bits!",
+      "08:31 on 04/18/25 - redbreadx gave you 100.0 bits!",
+      "08:31 on 04/18/25 - You gave 100.0 bits to redbreadx!"
+   ],
+   "ap-awesomeyoyo": [
+      "06:17 on 04/18/25 - You gave 100.0 bits to redbreadx!"
+   ],
+   "crazycoderxyz": [
+      "06:18 on 04/18/25 - You gave 100.0 bits to redbreadx!"
+   ],
+   "ajspeckhals": [
+      "06:45 on 04/18/25 - You gave 10.0 bits to commando_gaming!"
+   ],
+   "commando_gaming": [
+      "06:45 on 04/18/25 - ajspeckhals gave you 10.0 bits!",
+      "06:49 on 04/18/25 - You gave 10.0 bits to opticore!"
+   ],
+   "opticore": [
+      "06:49 on 04/18/25 - commando_gaming gave you 10.0 bits!"
+   ],
+   "ola-4b-fruit": [
+      "07:41 on 04/18/25 - You gave 1.0 bits to ola-4b-lime!",
+      "07:44 on 04/18/25 - ola-4b-fruit gave you 5.0 bits!",
+      "07:44 on 04/18/25 - You gave 5.0 bits to ola-4b-fruit!",
+      "07:45 on 04/18/25 - ola-4b-fruit gave you 5.0 bits!",
+      "07:45 on 04/18/25 - You gave 5.0 bits to ola-4b-fruit!",
+      "09:25 on 04/18/25 - You gave 2.0 bits to blockbit-server!",
+      "09:47 on 04/18/25 - ola-4b-fruit gave you 2.0 bits!",
+      "09:47 on 04/18/25 - You gave 2.0 bits to ola-4b-fruit!",
+      "09:48 on 04/18/25 - ola-4b-fruit gave you 97.0 bits!",
+      "09:48 on 04/18/25 - You gave 97.0 bits to ola-4b-fruit!",
+      "09:50 on 04/18/25 - ola-4b-fruit gave you 1.0 bits!",
+      "09:50 on 04/18/25 - You gave 1.0 bits to ola-4b-fruit!",
+      "09:50 on 04/18/25 - You gave 1.0 bits to griffpatch!",
+      "09:50 on 04/18/25 - ola-4b-fruit gave you 1.0 bits!",
+      "09:50 on 04/18/25 - You gave 1.0 bits to ola-4b-fruit!"
+   ],
+   "ola-4b-lime": [
+      "07:41 on 04/18/25 - ola-4b-fruit gave you 1.0 bits!"
+   ],
+   "omglolcantcatchme": [],
+   "overqualified": [
+      "08:14 on 04/18/25 - overqualified gave you 100.0 bits!",
+      "08:14 on 04/18/25 - You gave 100.0 bits to overqualified!",
+      "08:40 on 04/18/25 - You gave 20.0 bits to lifewalker10!"
+   ],
+   "lifewalker10": [
+      "08:40 on 04/18/25 - overqualified gave you 20.0 bits!"
+   ],
+   "moon1ight1": [],
+   "nhatminh_md": [],
+   "ignitestudios": [],
+   "--gameplay": [
+      "08:53 on 04/18/25 - more--gameplay gave you 100.0 bits!"
+   ],
+   "codegurujoelb": [],
+   "leonjx": [],
+   "oggy_250413_3": [],
+   "blockbit-server": [
+      "09:25 on 04/18/25 - ola-4b-fruit gave you 2.0 bits!"
+   ],
+   "gamekitchen": [],
+   "griffpatch": [
+      "09:50 on 04/18/25 - ola-4b-fruit gave you 1.0 bits!"
+   ],
+   "thetuatagovailoa": [],
+   "bubgamer072": [],
+   "g101art": [],
+   "litterbl0cks": [],
+   "grumpybro": [],
+   "mariobros956": [],
+   "hexa_animations": [],
+   "contributoryinstinct": [],
+   "bananacrusader123": [],
+   "rgjava-scratch": [],
+   "biggreenhat": [],
+   "sclf-xingshu": [],
+   "thomasore": [],
+   "codestorm1337": [],
+   "3dxbrayden2": [
+      "15:55 on 04/18/25 - You gave 50.0 bits to yippymishy!"
+   ],
+   "youssefthe5th": [],
+   "iamwilytoes": [],
+   "-exobyte-": [],
+   "elvenemperor": [],
+   "yippymishytest": [
+      "15:10 on 04/18/25 - yippymishy gave you 160.0 bits!",
+      "15:20 on 04/18/25 - yippymishy gave you 100.0 bits!",
+      "15:22 on 04/18/25 - yippymishy gave you 100.0 bits!",
+      "15:24 on 04/18/25 - yippymishy gave you 100.0 bits!",
+      "15:26 on 04/18/25 - yippymishy gave you 100.0 bits!"
+   ],
+   "-king-jack-": [],
+   "rothorius": [
+      "16:59 on 04/18/25 - kingchickadee gave you 10.0 bits!"
+   ],
+   "briiiiantscratcher": [
+      "15:47 on 04/18/25 - You gave 50.0 bits to yippymishy!"
+   ],
+   "foxymancoolman": [
+      "16:23 on 04/18/25 - foxymancoolman gave you 100.0 bits!",
+      "16:23 on 04/18/25 - You gave 100.0 bits to foxymancoolman!"
+   ],
+   "connerfurr13": [],
+   "nintendoswitch02": [
+      "16:04 on 04/18/25 - cookiemousee gave you 100.0 bits!",
+      "16:04 on 04/18/25 - relyingcandle49 gave you 100.0 bits!",
+      "16:07 on 04/18/25 - mhina_candle gave you 100.0 bits!"
+   ],
+   "cookiemousee": [
+      "16:04 on 04/18/25 - You gave 100.0 bits to nintendoswitch02!"
+   ],
+   "relyingcandle49": [
+      "16:04 on 04/18/25 - You gave 100.0 bits to nintendoswitch02!"
+   ],
+   "kermitable": [],
+   "mhina_candle": [
+      "16:07 on 04/18/25 - You gave 100.0 bits to nintendoswitch02!"
+   ],
+   "kingchickadee": [
+      "16:44 on 04/18/25 - kingchickadee gave you 10.0 bits!",
+      "16:44 on 04/18/25 - You gave 10.0 bits to kingchickadee!",
+      "16:56 on 04/18/25 - wizardweasel gave you 100.0 bits!",
+      "16:59 on 04/18/25 - You gave 10.0 bits to rothorius!",
+      "16:59 on 04/18/25 - rajjo2021 gave you 50.0 bits!"
+   ],
+   "mr_blaze_guy": [
+      "16:32 on 04/18/25 - blocktech_official gave you 100.0 bits!"
+   ],
+   "mrcoolpainter_": [],
+   "blocktech_official": [
+      "16:32 on 04/18/25 - You gave 100.0 bits to mr_blaze_guy!"
+   ],
+   "squire_bubble": [],
+   "wizardweasel": [
+      "16:56 on 04/18/25 - You gave 100.0 bits to kingchickadee!"
+   ],
+   "rajjo2021": [
+      "16:59 on 04/18/25 - You gave 50.0 bits to kingchickadee!"
+   ],
+   "rhinomazing22773": [],
+   "-xotic": [],
+   "fortnite_kid555": [
+      "17:34 on 04/18/25 - fortnite_kid555 gave you 3.0 bits!",
+      "17:34 on 04/18/25 - You gave 3.0 bits to fortnite_kid555!"
+   ],
+   "mrcoffeecat": [
+      "17:38 on 04/18/25 - You gave 100.0 bits to -theburrito-!"
+   ],
+   "-theburrito-": [
+      "17:38 on 04/18/25 - mrcoffeecat gave you 100.0 bits!",
+      "17:47 on 04/18/25 - dr-pepsi gave you 100.0 bits!",
+      "17:48 on 04/18/25 - -sharkgaming- gave you 100.0 bits!",
+      "17:52 on 04/18/25 - dogfreedom65 gave you 100.0 bits!",
+      "17:53 on 04/18/25 - _thecubicle_ gave you 100.0 bits!",
+      "19:04 on 04/18/25 - -thekoolboy- gave you 100.0 bits!"
+   ],
+   "dr-pepsi": [
+      "17:47 on 04/18/25 - You gave 100.0 bits to -theburrito-!"
+   ],
+   "-sharkgaming-": [
+      "17:48 on 04/18/25 - You gave 100.0 bits to -theburrito-!"
+   ],
+   "dogfreedom65": [
+      "17:52 on 04/18/25 - You gave 100.0 bits to -theburrito-!"
+   ],
+   "_thecubicle_": [
+      "17:53 on 04/18/25 - You gave 100.0 bits to -theburrito-!"
+   ],
+   "-thekoolboy-": [
+      "19:04 on 04/18/25 - You gave 100.0 bits to -theburrito-!"
+   ],
+   "orionrubiks_test": [],
+   "mewercats": [],
+   "wolther": [],
+   "toadtoo": [],
+   "ricdiamond1477": [],
+   "mewercats_randoms": [],
+   "logimeister": [],
+   "mewingcat456": [],
+   "kelmareartz": [],
+   "mewingcatanimatics": [],
+   "_kmstudios_": [],
+   "quacky-coder": []
+}

@@ -1,5 +1,5 @@
 # Import the necessary modules
-import scratchattach as scratch3
+import scratchattach as sa
 from local_simple_database import LocalDictDatabase
 import ast
 import time
@@ -10,19 +10,17 @@ import threading
 with open('secrets/session_id.txt', 'r') as session_id_txt:
     session_id = str(session_id_txt.read())
 
-#read the admins list
+# Read the admins list
 with open("admins.txt", "r") as admins_txt:
     admins_list = admins_txt.readlines()
-    admins_list = [i.replace("\n","") for i in admins_list]
+    admins_list = [i.replace("\n", "") for i in admins_list]
 
 # Connect to Scratch
 project_id = 669020072
 
-session = scratch3.Session(session_id=session_id, username='yippymishyTest')  # Update with your session ID and username
-print('Logged in as ' + session.get_linked_user().username)
-conn = session.connect_cloud(project_id)  # Update with your project ID
-client = scratch3.CloudRequests(conn, used_cloud_vars=["1", "2", "3"])
-
+session = sa.login_by_id(session_id, username="BlockBit-server") #replace with your session_id and username
+cloud = session.connect_cloud(project_id) #replace with your project id
+client = cloud.requests(used_cloud_vars=["1‎", "2‎", "3‎", "4‎"])
 # Setup database
 LDD = LocalDictDatabase(str_path_database_dir=".", default_value=None)
 
@@ -33,10 +31,10 @@ transactions_db = LDD["dict_transactions"]
 preferences_db = LDD["dict_preferences"]
 
 # Set the default values for some databases
-LDD["dict_balances"].change_default_value(False)
+#LDD["dict_balances"].change_default_value(False)
 LDD["dict_notifications"].change_default_value([])
 LDD["dict_preferences"].change_default_value(
-    {"theme": "blue", "mute": False}
+    {"theme": "blue", "mute": "False"}
 )
 
 # Define a function to clean and standardize user names
@@ -70,60 +68,33 @@ def create_id(inp):
     currentTime = int(time.time())
     return (myint + currentTime)
 
-#Create a dict with info on a transaction
-def save_transaction(sender,receiver,amount):
+# Create a dict with info on a transaction
+def save_transaction(sender, receiver, amount):
     id = create_id(sender)
     transactions_db[id] = {
-      "timestamp": int(time.time()),
-      "id": id,
-      "from": sender,
-      "to": receiver,
-      "amount": amount
-}
-    
+        "timestamp": int(time.time()),
+        "id": id,
+        "from": sender,
+        "to": receiver,
+        "amount": amount
+    }
 
 def generate_readable_timestamp():
     current_datetime = datetime.now()
     return current_datetime.strftime("%H:%M on %m/%d/%y")
 
-#Admin commands in comments
-def check_for_admin_comments():
-    project = session.connect_project(project_id)
-    comments = project.comments(limit=1, offset=0)
-    comment = comments[0]
-    commentor = comment['author']['username']
-    content = comment['content']
-    comment_id = comment['id']
-
-    if commentor in admins_list:
-        command = content.split(' ')
-
-        if command[0] == '$set' and len(command) == 3:
-            if (not commentor.lower() == str(command[1].lower())) or commentor.lower() == "yippymishy":
-                try:
-                    set_balance(str(command[1]).lower(), float(command[2]))
-                except ValueError:
-                    pass
-        
-            #project.delete_comment(comment_id=comment_id)
-
-def admin_command_loop():
-    while True:
-        check_for_admin_comments()
-        time.sleep(5)
-
-admin_comments_thread = threading.Thread(target=admin_command_loop)
-admin_comments_thread.start()
 
 # Client request handler definitions
 @client.request
 def balance():
     requester = client.get_requester()
     user = fix_name(requester)
-    if get_balance(user):
+    try:
+        get_balance(user)
         balance = get_balance(user)
-    else:
+    except KeyError:
         set_balance(user, 100.0)
+
     balance = get_balance(user)
     print(f"Returning {user}'s balance of {balance}")
 
@@ -148,7 +119,7 @@ def set_preferences(theme, mute):
     return "updated preferences"
 
 @client.request
-def give(amount, user):  # Called when the client receives a request
+def give(amount, user):
     amount = float(amount)
     user = fix_name(user)
     sender = fix_name(client.get_requester())
@@ -169,6 +140,11 @@ def give(amount, user):  # Called when the client receives a request
         notifs_list = []
     notifs_list.append(f"{notif_timestamp} - You gave {amount} bits to {user}!")
     notifications_db[sender] = notifs_list
+
+    try:
+        get_balance(user)
+    except KeyError:
+        set_balance(user, 100.0)
 
     if get_balance(sender) >= amount and amount > 0:
         set_balance(sender, get_balance(sender) - amount)
@@ -201,11 +177,16 @@ def notifications():
     except KeyError:
         notifications_db[fix_name(client.get_requester())] = []
         return "No notifications!"
+    
+@client.request
+def change_balance(user, amount):
+    set_balance(user, amount)
+    print(f"{client.get_requester()} set balance of {user} to {amount}")
+    return "success!"
 
 # Event handling
 @client.event
 def on_ready():
     print("Request handler is running")
 
-# Start the client
-client.run()  # Make sure this is at the bottom of the file
+client.start(thread=True)
