@@ -61,9 +61,12 @@ try:
         server.login(sender_email, sender_password)
         server.sendmail(sender_email, receiver_email, msg.as_string())
         print('Email sent successfully!')
+    delete7z()
 except Exception as e:
     print(f'Error sending email: {e}')
+    delete7z()
+
     
 
-SendTo7z.delete7z()
+
 
