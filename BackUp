@@ -16,7 +16,7 @@ with py7zr.SevenZipFile('BlockBit.7z', 'w') as archive:
 
 
 # Replace with the actual path to your .7z file
-file_path = '/home/pi/Python_Projects/ByteBank/backups/ByteBank.7z'
+file_path = '' # replace with where your .7z file will be after creating it
 def delete7z():
     try:
         os.remove(file_path)
@@ -35,7 +35,7 @@ sender_password = ''  # Use an app password, not your Gmail password
 receiver_email = 'example@gmail.com' #replace with your email
 subject = 'Email with 7z attachment'
 body = 'Please find the attached 7z file.'
-file_path = ''  # Replace with where you want your backup to go while it is sending
+file_path = ''  # Replace with where you want the .7z file to go while it is sending
 
 
 msg = MIMEMultipart()
