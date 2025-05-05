@@ -8,7 +8,8 @@ All the server and API code for [BlockBit](https://scratch.mit.edu/projects/6690
 # Files
 **main.py** - Creates a thread for the API and a thread for the server.\
 **server.py** - All of the main server code is in this file. It handles transactions, saving and returning peoples' balances, and anything else related to the Scratch project. There are a decent number of comments there to help you understand it.\
-**api.py** - All of the code for the API (a Flask app) is here.
+**api.py** - All of the code for the API (a Flask app) is here.\
+**admins.txt** - List of admins that are authorised to change anyone's balances.
 
 ### templates
 **index.html** - The main page of the API
