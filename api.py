@@ -19,7 +19,7 @@ def home():
 @app.route('/query/<username>')
 def query_user(username):
     result = {}
-    for k,v in transactions_db.keys():
+    for k,v in transactions_db.items():
         if v["from"] == username or v["to"] == username:
             result.update({k:v})
     return result
