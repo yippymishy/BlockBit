@@ -180,9 +180,13 @@ def notifications():
     
 @client.request
 def change_balance(user, amount):
-    set_balance(user, amount)
-    print(f"{client.get_requester()} set balance of {user} to {amount}")
-    return "success!"
+    if client.get_requester() in admins_list:
+        set_balance(user, amount)
+        print(f"Admin '{client.get_requester()}' set balance of {user} to {amount}")
+        return "success!"
+    else:
+        print(f"Unauthorised user '{client.get_requester()}' tried to change the balance of {user} to {amount}")
+        return "only admins are authorised to change balances"
 
 # Event handling
 @client.event
