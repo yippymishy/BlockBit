@@ -158,9 +158,9 @@ def give(amount, user):
 @client.request
 def search(user):
     user = fix_name(user)
-    if get_balance(user):
+    try:
         message = f"{user} has {get_balance(user)} bits!"
-    else:
+    except KeyError:
         message = f"{user}'s balance couldn't be found. Did you spell it right?"
 
     return message
