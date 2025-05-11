@@ -13,7 +13,7 @@ with open('secrets/session_id.txt', 'r') as session_id_txt:
 # Read the admins list
 with open("admins.txt", "r") as admins_txt:
     admins_list = admins_txt.readlines()
-    admins_list = [i.replace("\n", "") for i in admins_list]
+    admins_list = [i.replace("\n", "").replace(" ", "").lower() for i in admins_list]
 
 # Connect to Scratch
 project_id = 669020072
@@ -26,7 +26,7 @@ LDD = LocalDictDatabase(str_path_database_dir=".", default_value=None)
 
 # "db" is the database for balances (dict_balances.txt)
 db = LDD["dict_balances"]
-notifications_db = LDD["dict_notifcations"]
+notifications_db = LDD["dict_notifications"]
 transactions_db = LDD["dict_transactions"]
 preferences_db = LDD["dict_preferences"]
 
@@ -108,7 +108,8 @@ def balance():
 
 @client.request
 def get_preferences():
-    return [preferences_db[fix_name(client.get_requester())][i] for i in preferences_db[fix_name(client.get_requester())]]
+    requester = fix_name(client.get_requester())
+    return [preferences_db[requester][i] for i in preferences_db[requester]]
 
 @client.request
 def set_preferences(theme, mute):
@@ -156,9 +157,10 @@ def give(amount, user):
 
 @client.request
 def search(user):
-    if get_balance(user):
+    user = fix_name(user)
+    try:
         message = f"{user} has {get_balance(user)} bits!"
-    else:
+    except KeyError:
         message = f"{user}'s balance couldn't be found. Did you spell it right?"
 
     return message
@@ -169,20 +171,26 @@ def leaderboard():
 
 @client.request
 def notifications():
-    if str(notifications_db[fix_name(client.get_requester())]) == '[]':
+    requester = fix_name(client.get_requester())
+    if str(notifications_db[requester]) == '[]':
         return "No notifications!"
     try:
-        notifs = notifications_db[fix_name(client.get_requester())]
+        notifs = notifications_db[requester]
         return notifs
     except KeyError:
-        notifications_db[fix_name(client.get_requester())] = []
+        notifications_db[requester] = []
         return "No notifications!"
     
 @client.request
 def change_balance(user, amount):
-    set_balance(user, amount)
-    print(f"{client.get_requester()} set balance of {user} to {amount}")
-    return "success!"
+    requester = fix_name(client.get_requester())
+    if requester in admins_list:
+        set_balance(user, amount)
+        print(f"Admin '{requester}' set balance of {user} to {amount}")
+        return "success!"
+    else:
+        print(f"Unauthorised user '{requester}' tried to change the balance of {user} to {amount}")
+        return "only admins are authorised to change balances"
 
 # Event handling
 @client.event

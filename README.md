@@ -2,12 +2,14 @@
 All the server and API code for [BlockBit](https://scratch.mit.edu/projects/669020072/), a currency on Scratch!
 
 # API Docs ([blockbit.yippymishy.com](https://blockbit.yippymishy.com))
-**/balance/\<user>** - returns the specified user's balance [[Example](https://blockbit.yippymishy.com/balance/yippymishy)]
+**/balance/\<user>** - returns the specified user's balance [[Example](https://blockbit.yippymishy.com/balance/yippymishy)]\
+**/query/\<user>** - returns the specified user's transaction history [[Example](https://blockbit.yippymishy.com/query/yippymishy)]
 
 # Files
 **main.py** - Creates a thread for the API and a thread for the server.\
 **server.py** - All of the main server code is in this file. It handles transactions, saving and returning peoples' balances, and anything else related to the Scratch project. There are a decent number of comments there to help you understand it.\
-**api.py** - All of the code for the API (a Flask app) is here.
+**api.py** - All of the code for the API (a Flask app) is here.\
+**admins.txt** - List of admins that are authorised to change anyone's balances.
 
 ### templates
 **index.html** - The main page of the API
@@ -16,6 +18,8 @@ All the server and API code for [BlockBit](https://scratch.mit.edu/projects/6690
 **session_id.txt** - Put your Scratch session ID here
 
 # Changelog (used to be on Scratch but got too long)
+5/5/25 - 5.4 - fixed /query/ api and fixed infinite bits exploit
+
 4/17/25 - 5.3 - it’s back after months of cloud variables not working! Updated server code to use scratchattach 2.0. Also reset everybody's bits because it all got deleted somehow - but that's just a minor change :P
 
 11/5/24 - 5.2 - added a /transactions route to the API, so you can see any user's transaction history.
