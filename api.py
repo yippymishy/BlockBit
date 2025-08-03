@@ -18,11 +18,16 @@ def home():
 
 @app.route('/query/<username>')
 def query_user(username):
-    result = {}
-    for k,v in transactions_db.items():
-        if v["from"] == username or v["to"] == username:
-            result.update({k:v})
-    return result
+    if username not in db:
+        return jsonify({'success': False, 'message': 'User not found'}), 404
+
+    result = {
+        k: v for k, v in transactions_db.items()
+        if v.get("from") == username or v.get("to") == username
+    }
+
+    return jsonify({'success': True, 'username': username, 'transactions': result})
+
 
 @app.route('/balance/<username>')
 def balance(username):
